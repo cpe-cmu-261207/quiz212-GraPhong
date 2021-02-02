@@ -11,15 +11,19 @@ function App() {
       age: "20"
     }
   ];
+
+  const namePerson = persons.map((persons) => persons.name);
+
   return (
     <div class="ml-2">
       {/* Code me please! */}
+
       <div class="mb-4">
         <h3 class="title is-3">ID Counter</h3>
-        <p>YOUR ID HERE</p>
-        <button>-</button>
-        <button>reset</button>
-        <button>+</button>
+        <p>620610797</p>
+        <button oneclick={() => this.updateEquation()}>-</button>
+        <button oneclick={() => this.clearEquation("620610797")}>reset</button>
+        <button oneclick={() => this.updateEquation()}>+</button>
       </div>
 
       {/* Convert me to a component! */}
@@ -32,9 +36,9 @@ function App() {
             <th>Age</th>
           </tr>
           <tr>
-            <td>Bob</td>
+            <td>Phongsathon Noinach 620610797</td>
             <td>male</td>
-            <td>50</td>
+            <td>21</td>
           </tr>
         </tbody>
       </table>
